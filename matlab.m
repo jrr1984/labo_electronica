@@ -14,10 +14,12 @@ set(vu,'InputBufferSize',20000)
 fopen(vu);
 
 canal=1;% defino que canal voy a pedir
+canal_2 =2;
 
 %adquiero los datos de una pantalla
 [voltaje tiempo]=OSC_adquiere_canal(vu,canal);
 
+[voltaje_2 tiempo_2]=OSC_adquiere_canal(vu,canal_2);
 
 %cierro la comunicacion con el osciloscopio
 fclose(vu); 
